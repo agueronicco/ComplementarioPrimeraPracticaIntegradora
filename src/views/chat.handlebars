@@ -1,0 +1,17 @@
+<div >
+    <h1 style="margin-left: 30px;">Bienvenidos al Chat</h1>
+    <p style="margin-left: 30px;">Sean respetuosos unos con otros. Por su seguridad, todos los mensajes intercambiados en el chat estan siendo guardados en nuestros servidores.</p>
+    <div class="ChatDiv">
+        <div class="ChatBox">
+            <p style="margin-left: 10px;" id="messagelogs"></p>
+        </div>
+        <div class="ChatButtonDiv">
+            <input class="ChatInput" type="text" id="chatbox">
+            <input class="ChatButton" type="button" id="chatbutton" value="Enviar" onclick="enviar()">
+        </div>
+    </div>
+    {{!-- <div style="margin-top: 10vh; height: 100%"></div> --}}
+</div>
+<script src="/socket.io/socket.io.js" ></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+<script src="/js/chat.js" ></script>
